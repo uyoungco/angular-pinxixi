@@ -1,0 +1,18 @@
+<div *ngIf="selectedTabLink === 'hot' else other">
+  <app-image-slider [sliders]="imageSliders"></app-image-slider>
+  <app-horizontal-grid>
+  <span appGridItem *ngFor="let item of channels">
+    <img [src]="item.icon" alt="" appGridItemImage="2rem">
+    <span appGridItemTitle="0.6rem">{{item.title}}</span>
+  </span>
+  </app-horizontal-grid>
+</div>
+<ng-template #other>
+  Other work 其他
+</ng-template>
+<a
+  [routerLink]="['grand']"
+  routerLinkActive="active"
+  [queryParams]="{nmae: 'zhangsan'}"
+>link to grand</a>
+<router-outlet></router-outlet>

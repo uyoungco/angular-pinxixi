@@ -1,0 +1,12 @@
+<ul>
+  <li class="tab-item" *ngFor="let item of menus; let i = index">
+    <a [class.active]="i === selectedIndex" (click)="handleSelection(i)">
+      {{item.title}}
+    </a>
+    <span class="indicator" *ngIf="i === selectedIndex"></span>
+  </li>
+<!--  <ng-template #elseTemp>-->
+<!--    <span>hello</span>-->
+<!--  </ng-template>-->
+</ul>
+

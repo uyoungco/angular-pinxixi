@@ -1,0 +1,7 @@
+<app-scrollable-tab
+  [menus]="TopMenus"
+  (tabSelected)="handleSelection($event)"
+  [selectedIndex]="selectedIndex"
+></app-scrollable-tab>
+<router-outlet></router-outlet>
+
