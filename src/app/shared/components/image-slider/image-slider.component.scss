@@ -7,6 +7,9 @@
     scroll-behavior: smooth;
     -webikit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    &::-webkit-scrollbar {
+      display: none!important;
+    }
   }
   img {
     width: 100%;

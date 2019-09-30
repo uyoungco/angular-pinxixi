@@ -1,3 +1,10 @@
 <p>
   {{  date | appAgo }}
 </p>
+
+<p>{{values}}</p>
+
+<input type="text" #inputRef>
+
+<p>---------</p>
+<app-count-down [startDate]="startDate" [futureDate]="futureDate"></app-count-down>

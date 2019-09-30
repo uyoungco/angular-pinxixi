@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core'
-import {count} from 'rxjs/operators';
 
 @Pipe({name: 'appAgo'})
 export class AgoPipe implements PipeTransform {

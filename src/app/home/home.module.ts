@@ -4,9 +4,12 @@ import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import {
   HomeContainerComponent,
-  HomeDetaliComponent
+  HomeDetaliComponent,
+  HomeGrandComponent
 } from './components';
-import { HomeGrandComponent } from './components/home-grand/home-grand.component';
+
+import { HomeService } from './services';
+
 
 @NgModule({
   declarations: [
@@ -14,6 +17,7 @@ import { HomeGrandComponent } from './components/home-grand/home-grand.component
     HomeDetaliComponent,
     HomeGrandComponent
   ],
+  providers: [HomeService],
   imports: [
     SharedModule,
     HomeRoutingModule

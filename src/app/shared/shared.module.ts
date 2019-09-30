@@ -5,7 +5,9 @@ import { FormsModule } from '@angular/forms';
 import {
   ScrollableTabComponent,
   ImageSliderComponent,
-  HorizontalGridComponent
+  HorizontalGridComponent,
+  CountDownComponent,
+  FooterComponent
 } from './components';
 import {
   GridItemDirective,
@@ -19,10 +21,14 @@ import { AgoPipe } from './pipes';
     ScrollableTabComponent,
     ImageSliderComponent,
     HorizontalGridComponent,
+    CountDownComponent,
+    FooterComponent,
     GridItemDirective,
     GridItemImageDirective,
     GridItemTitleDirective,
-    AgoPipe
+    AgoPipe,
+    CountDownComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -34,6 +40,8 @@ import { AgoPipe } from './pipes';
     ScrollableTabComponent,
     ImageSliderComponent,
     HorizontalGridComponent,
+    CountDownComponent,
+    FooterComponent,
     GridItemDirective,
     GridItemImageDirective,
     GridItemTitleDirective,

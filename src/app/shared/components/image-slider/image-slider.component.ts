@@ -7,10 +7,11 @@ import {
   AfterViewInit,
   Renderer2,
   OnDestroy,
-  HostListener
+  ChangeDetectionStrategy
 } from '@angular/core';
 
 export interface ImageSlider {
+  id: number;
   imgUrl: string;
   link: string;
   caption: string;
@@ -19,7 +20,8 @@ export interface ImageSlider {
 @Component({
   selector: 'app-image-slider',
   templateUrl: './image-slider.component.html',
-  styleUrls: ['./image-slider.component.scss']
+  styleUrls: ['./image-slider.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ImageSliderComponent implements OnInit, AfterViewInit, OnDestroy {
 

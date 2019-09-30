@@ -1,5 +1,5 @@
 <app-scrollable-tab
-  [menus]="TopMenus"
+  [menus]="TopMenus$ | async"
   (tabSelected)="handleSelection($event)"
   [selectedIndex]="selectedIndex"
 ></app-scrollable-tab>
